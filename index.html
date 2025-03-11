@@ -11,225 +11,107 @@
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!-- Optional: Animate on Scroll (AOS) -->
+  <!-- AOS (Animate on Scroll) CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
   <style>
-    /* Custom hero background: abstract data or starry style */
+    /* Custom hero background using a data-themed image */
     .hero-bg {
-      background: url('https://images.unsplash.com/photo-1526378720663-4aa0cafa3891?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')
-        center center / cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')
+                  center/cover no-repeat;
     }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
-
-  <!-- Top Bar -->
-  <div class="w-full bg-gray-800 text-white text-sm">
-    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
-      <!-- Left Contact Info -->
-      <div class="flex items-center gap-4">
-        <div><i class="fa fa-phone mr-1"></i> +254 700 000 000</div>
-        <div><i class="fa fa-map-marker-alt mr-1"></i> Nairobi, Kenya</div>
-        <div><i class="fa fa-envelope mr-1"></i> contact@sokodata.com</div>
-      </div>
-      <!-- Right Navigation: Solutions, Services, Blog, Consultation, Login -->
-      <div class="hidden sm:flex items-center gap-4">
-        <a href="#solutions" class="hover:underline">Solutions</a>
-        <a href="#services" class="hover:underline">Services</a>
-        <a href="#blog" class="hover:underline">Blog</a>
-        <a href="#consultation" class="hover:underline">Consultation</a>
-        <a href="#login" class="hover:underline">Login</a>
+  
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="text-2xl font-bold text-blue-600">SokoData</a>
+      <!-- Navigation (Desktop) -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#solutions" class="text-gray-700 hover:text-blue-600">Solutions</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menuButton" class="text-gray-700 focus:outline-none">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
       </div>
     </div>
-  </div>
-
-  <!-- Header / Main Navigation (Logo & Possibly Another Nav) -->
-  <header class="bg-white shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#" class="text-2xl font-bold text-blue-600">
-        SokoData
-      </a>
-      <!-- Secondary Nav or CTA (if needed) -->
-      <nav class="space-x-4 hidden md:block">
-        <a href="#solutions" class="text-gray-700 hover:text-blue-600 font-medium">Solutions</a>
-        <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
-        <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow">
+      <nav class="px-4 py-3 space-y-2">
+        <a href="#home" class="block text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#solutions" class="block text-gray-700 hover:text-blue-600">Solutions</a>
+        <a href="#about" class="block text-gray-700 hover:text-blue-600">About</a>
+        <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero-bg h-[60vh] md:h-[80vh] w-full bg-blue-900 flex items-center justify-center relative">
-    <div class="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
-    <div class="relative z-10 text-center text-white max-w-2xl px-4">
-      <h1 class="text-3xl md:text-5xl font-bold mb-4" data-aos="fade-up">
-        Empower Your Data
-      </h1>
-      <p class="text-lg md:text-xl mb-6" data-aos="fade-up" data-aos-delay="100">
-        Comprehensive Data Analytics Solutions to Transform Your Business
-      </p>
-      <a href="#solutions"
-         class="inline-block bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-semibold transition"
-         data-aos="fade-up"
-         data-aos-delay="200"
-      >
-        <i class="fa fa-database mr-2"></i>Explore Solutions
+  <section id="home" class="hero-bg h-screen flex items-center justify-center relative">
+    <div class="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
+    <div class="relative z-10 text-center text-white px-4" data-aos="fade-up">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Empower Your Data</h1>
+      <p class="text-xl md:text-2xl mb-6">Innovative Data Analytics Solutions to Drive Business Success</p>
+      <a href="#solutions" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded">
+        Explore Solutions
       </a>
     </div>
   </section>
 
-  <!-- Solutions Section -->
-  <section id="solutions" class="py-12 bg-gray-50">
+  <!-- Solutions Cards Section -->
+  <section id="solutions" class="py-12">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">SokoData Solutions</h2>
-      <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-        We offer a wide range of data analytics solutions, from data visualization to cyber security. Whether you’re just starting with analytics or looking to enhance existing systems, we’ve got you covered.
-      </p>
-      <!-- Grid of Solutions -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Our Solutions</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1: Data Visualization -->
-        <div class="bg-white rounded shadow hover:shadow-md transition p-4" data-aos="fade-up" data-aos-delay="200">
-          <img
-            src="https://images.unsplash.com/photo-1517142089942-ba376ce32a5e?auto=format&fit=crop&w=800&q=80"
-            alt="Data Visualization"
-            class="w-full h-32 object-cover mb-4 rounded"
-            loading="lazy"
-          >
-          <h3 class="font-bold text-xl mb-2">Data Visualization</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Transform raw data into actionable insights with interactive dashboards and real-time reporting.
-          </p>
-          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">
-            Learn More
-          </button>
+        <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4" data-aos="fade-up">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Visualization" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-bold mb-2">Data Visualization</h3>
+          <p class="text-gray-600 mb-4">Transform your raw data into intuitive visual stories that drive action.</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn More</button>
         </div>
         <!-- Card 2: Machine Learning -->
-        <div class="bg-white rounded shadow hover:shadow-md transition p-4" data-aos="fade-up" data-aos-delay="300">
-          <img
-            src="https://images.unsplash.com/photo-1581091870623-1f9c0a7f3f44?auto=format&fit=crop&w=800&q=80"
-            alt="Machine Learning"
-            class="w-full h-32 object-cover mb-4 rounded"
-            loading="lazy"
-          >
-          <h3 class="font-bold text-xl mb-2">Machine Learning</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Leverage predictive models and AI-driven insights to stay ahead in a competitive market.
-          </p>
-          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">
-            Learn More
-          </button>
+        <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Machine Learning" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-bold mb-2">Machine Learning</h3>
+          <p class="text-gray-600 mb-4">Unlock the power of predictive analytics and AI-driven insights.</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn More</button>
         </div>
         <!-- Card 3: Cyber Security -->
-        <div class="bg-white rounded shadow hover:shadow-md transition p-4" data-aos="fade-up" data-aos-delay="400">
-          <img
-            src="https://images.unsplash.com/photo-1605902711622-cfb43c44375e?auto=format&fit=crop&w=800&q=80"
-            alt="Cyber Security"
-            class="w-full h-32 object-cover mb-4 rounded"
-            loading="lazy"
-          >
-          <h3 class="font-bold text-xl mb-2">Cyber Security</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Protect your data with state-of-the-art threat analysis, real-time monitoring, and robust data protection.
-          </p>
-          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">
-            Learn More
-          </button>
+        <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1611522068447-4b8e84c2cd31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cyber Security" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-bold mb-2">Cyber Security</h3>
+          <p class="text-gray-600 mb-4">Protect your data with cutting-edge security solutions and compliance measures.</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn More</button>
         </div>
         <!-- Card 4: Data Protection -->
-        <div class="bg-white rounded shadow hover:shadow-md transition p-4" data-aos="fade-up" data-aos-delay="500">
-          <img
-            src="https://images.unsplash.com/photo-1591696331111-bb2c65f382a3?auto=format&fit=crop&w=800&q=80"
-            alt="Data Protection"
-            class="w-full h-32 object-cover mb-4 rounded"
-            loading="lazy"
-          >
-          <h3 class="font-bold text-xl mb-2">Data Protection</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            Ensure compliance and secure your business with end-to-end data governance and privacy frameworks.
-          </p>
-          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">
-            Learn More
-          </button>
+        <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://images.unsplash.com/photo-1591696331111-bb2c65f382a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Protection" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-bold mb-2">Data Protection</h3>
+          <p class="text-gray-600 mb-4">Secure your business with robust data governance and privacy frameworks.</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn More</button>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="py-12 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Our Services</h2>
-      <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-        From data audits and strategy formulation to implementation and support, SokoData offers full-stack data services to help you harness the true power of analytics.
-      </p>
-      <div class="flex flex-col md:flex-row gap-8">
-        <!-- Service 1: Reports Formulation -->
-        <div class="bg-gray-50 rounded-lg shadow-md p-6 md:w-1/2" data-aos="fade-up" data-aos-delay="200">
+        <!-- Card 5: Reports & Dashboards -->
+        <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://images.unsplash.com/photo-1581091870623-1f9c0a7f3f44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Reports & Dashboards" class="w-full h-48 object-cover rounded mb-4">
           <h3 class="text-xl font-bold mb-2">Reports & Dashboards</h3>
-          <p class="text-gray-700 mb-4">
-            Get comprehensive reports tailored to your key metrics. We design interactive dashboards that simplify complex data and help you make data-driven decisions faster.
-          </p>
-          <ul class="list-disc ml-6 text-gray-600 mb-4">
-            <li>Real-time KPI monitoring</li>
-            <li>Automated report scheduling</li>
-            <li>Custom visualization design</li>
-          </ul>
-          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-            Request a Demo
-          </button>
+          <p class="text-gray-600 mb-4">Access real-time insights through interactive, custom dashboards.</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn More</button>
         </div>
-        <!-- Service 2: Data Consultation -->
-        <div class="bg-gray-50 rounded-lg shadow-md p-6 md:w-1/2" data-aos="fade-up" data-aos-delay="300">
-          <h3 class="text-xl font-bold mb-2">Consultation & Strategy</h3>
-          <p class="text-gray-700 mb-4">
-            Our experts work with you to develop a solid data strategy. We help identify gaps, define roadmaps, and implement best practices tailored to your business needs.
-          </p>
-          <ul class="list-disc ml-6 text-gray-600 mb-4">
-            <li>Data maturity assessment</li>
-            <li>Technology stack recommendations</li>
-            <li>Roadmap & ROI analysis</li>
-          </ul>
-          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
-            Book a Session
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-12 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">About SokoData</h2>
-      <div class="flex flex-col md:flex-row items-center">
-        <!-- Image -->
-        <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8" data-aos="fade-up">
-          <img 
-            src="https://images.unsplash.com/photo-1526378720663-4aa0cafa3891?auto=format&fit=crop&w=800&q=80" 
-            alt="About SokoData" 
-            class="rounded shadow-md w-full"
-            loading="lazy"
-          />
-        </div>
-        <!-- Text -->
-        <div class="md:w-1/2" data-aos="fade-up" data-aos-delay="100">
-          <p class="text-gray-700 mb-4">
-            SokoData is your trusted partner for data analytics solutions. We empower organizations to turn raw data into valuable insights through cutting-edge technology, innovation, and expertise.
-          </p>
-          <p class="text-gray-700 mb-4">
-            Whether you're looking for end-to-end analytics implementation or specialized support in machine learning, visualization, or data protection, our team of experts is here to help you thrive in a data-driven world.
-          </p>
-          <p class="text-gray-700 mb-4">
-            Partner with us to unleash the full potential of your data and gain a competitive edge in your industry.
-          </p>
-          <a 
-            href="#solutions" 
-            class="inline-block mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
-          >
-            View Our Solutions
-          </a>
+        <!-- Card 6: Data Consultation -->
+        <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4" data-aos="fade-up" data-aos-delay="500">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Consultation" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-bold mb-2">Data Consultation</h3>
+          <p class="text-gray-600 mb-4">Get expert advice and tailored strategies for all your data challenges.</p>
+          <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn More</button>
         </div>
       </div>
     </div>
@@ -238,26 +120,25 @@
   <!-- Footer -->
   <footer class="bg-gray-800 text-white pt-8 pb-4">
     <div class="max-w-7xl mx-auto px-4">
-      <!-- Upper Footer: Quick links, Payment/Tech icons, etc. -->
-      <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-8">
+      <div class="flex flex-col md:flex-row md:justify-between mb-8">
         <!-- Column 1: Company Info -->
         <div class="mb-6 md:mb-0">
           <h3 class="font-bold text-xl mb-2">SokoData</h3>
-          <p class="text-sm text-gray-200">
-            Your go-to platform for all Data Analytics, Cyber Security, and Machine Learning needs.
+          <p class="text-sm text-gray-300">
+            Your trusted partner for innovative Data Analytics Solutions.
           </p>
         </div>
-        <!-- Column 2: Quick Nav -->
+        <!-- Column 2: Quick Links -->
         <div class="mb-6 md:mb-0">
           <h4 class="font-semibold mb-2">Quick Links</h4>
           <ul class="space-y-1 text-sm">
+            <li><a href="#home" class="hover:underline">Home</a></li>
             <li><a href="#solutions" class="hover:underline">Solutions</a></li>
-            <li><a href="#services" class="hover:underline">Services</a></li>
             <li><a href="#about" class="hover:underline">About</a></li>
             <li><a href="#contact" class="hover:underline">Contact</a></li>
           </ul>
         </div>
-        <!-- Column 3: Services -->
+        <!-- Column 3: Our Services -->
         <div class="mb-6 md:mb-0">
           <h4 class="font-semibold mb-2">Our Services</h4>
           <ul class="space-y-1 text-sm">
@@ -279,12 +160,8 @@
           </div>
         </div>
       </div>
-
-      <!-- Lower Footer: Copyright -->
       <div class="border-t border-gray-700 pt-4 text-center text-sm text-gray-300">
-        <p class="mb-2">
-          &copy; <span id="year"></span> SokoData. All rights reserved.
-        </p>
+        <p>&copy; <span id="year"></span> SokoData. All rights reserved.</p>
         <div class="space-x-4">
           <a href="#" class="hover:underline">Terms &amp; Conditions</a>
           <a href="#" class="hover:underline">Privacy Policy</a>
@@ -293,7 +170,7 @@
     </div>
   </footer>
 
-  <!-- AOS JS (Optional) -->
+  <!-- AOS JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -303,8 +180,15 @@
       easing: 'ease-out-cubic'
     });
 
-    // Update Year
+    // Update footer year dynamically
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
   </script>
 </body>
 </html>
