@@ -7,15 +7,13 @@
   
   <!-- Tailwind CSS (Minified) -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
   <!-- AOS (Animate on Scroll) CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-
+  
   <style>
-    /* Custom hero background using a data-themed image */
+    /* Custom hero background */
     .hero-bg {
       background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')
                   center/cover no-repeat;
@@ -53,7 +51,7 @@
       </nav>
     </div>
   </header>
-
+  
   <!-- Hero Section -->
   <section id="home" class="hero-bg h-screen flex items-center justify-center relative">
     <div class="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
@@ -65,58 +63,204 @@
       </a>
     </div>
   </section>
-
+  
   <!-- Solutions Cards Section -->
-  <section id="solutions" class="py-12">
+  <section id="solutions" class="py-12 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Our Solutions</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1: Data Visualization -->
         <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4" data-aos="fade-up">
-          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Visualization" class="w-full h-48 object-cover rounded mb-4">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Data Visualization" 
+               class="w-full h-48 object-cover rounded mb-4">
           <h3 class="text-xl font-bold mb-2">Data Visualization</h3>
-          <p class="text-gray-600 mb-4">Transform your raw data into intuitive visual stories that drive action.</p>
+          <p class="text-gray-600 mb-4">Transform raw data into interactive visual stories that drive decisions.</p>
           <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn More</button>
         </div>
         <!-- Card 2: Machine Learning -->
         <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4" data-aos="fade-up" data-aos-delay="100">
-          <img src="https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Machine Learning" class="w-full h-48 object-cover rounded mb-4">
+          <img src="https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Machine Learning" 
+               class="w-full h-48 object-cover rounded mb-4">
           <h3 class="text-xl font-bold mb-2">Machine Learning</h3>
-          <p class="text-gray-600 mb-4">Unlock the power of predictive analytics and AI-driven insights.</p>
+          <p class="text-gray-600 mb-4">Unlock AI-driven insights and predictive models for your business.</p>
           <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn More</button>
         </div>
-        <!-- Card 3: Cyber Security -->
+        <!-- Card 3: Cyber Security (Updated URL) -->
         <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4" data-aos="fade-up" data-aos-delay="200">
-          <img src="https://images.unsplash.com/photo-1611522068447-4b8e84c2cd31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cyber Security" class="w-full h-48 object-cover rounded mb-4">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Cyber Security" 
+               class="w-full h-48 object-cover rounded mb-4">
           <h3 class="text-xl font-bold mb-2">Cyber Security</h3>
           <p class="text-gray-600 mb-4">Protect your data with cutting-edge security solutions and compliance measures.</p>
           <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn More</button>
         </div>
-        <!-- Card 4: Data Protection -->
+        <!-- Card 4: Data Protection (Updated URL) -->
         <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4" data-aos="fade-up" data-aos-delay="300">
-          <img src="https://images.unsplash.com/photo-1591696331111-bb2c65f382a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Protection" class="w-full h-48 object-cover rounded mb-4">
+          <img src="https://images.unsplash.com/photo-1612204502429-298ef5582d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Data Protection" 
+               class="w-full h-48 object-cover rounded mb-4">
           <h3 class="text-xl font-bold mb-2">Data Protection</h3>
           <p class="text-gray-600 mb-4">Secure your business with robust data governance and privacy frameworks.</p>
           <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn More</button>
         </div>
-        <!-- Card 5: Reports & Dashboards -->
+        <!-- Card 5: Reports & Dashboards (Updated URL) -->
         <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4" data-aos="fade-up" data-aos-delay="400">
-          <img src="https://images.unsplash.com/photo-1581091870623-1f9c0a7f3f44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Reports & Dashboards" class="w-full h-48 object-cover rounded mb-4">
+          <img src="https://images.unsplash.com/photo-1591295836912-0c81842e5f7d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Reports & Dashboards" 
+               class="w-full h-48 object-cover rounded mb-4">
           <h3 class="text-xl font-bold mb-2">Reports & Dashboards</h3>
           <p class="text-gray-600 mb-4">Access real-time insights through interactive, custom dashboards.</p>
           <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn More</button>
         </div>
         <!-- Card 6: Data Consultation -->
         <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4" data-aos="fade-up" data-aos-delay="500">
-          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Consultation" class="w-full h-48 object-cover rounded mb-4">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="Data Consultation" 
+               class="w-full h-48 object-cover rounded mb-4">
           <h3 class="text-xl font-bold mb-2">Data Consultation</h3>
-          <p class="text-gray-600 mb-4">Get expert advice and tailored strategies for all your data challenges.</p>
+          <p class="text-gray-600 mb-4">Receive expert guidance and tailor-made strategies to overcome your data challenges.</p>
           <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Learn More</button>
         </div>
       </div>
     </div>
   </section>
-
+  
+  <!-- Services Section -->
+  <section id="services" class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Our Services</h2>
+      <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        From detailed reports and dashboards to end-to-end analytics implementation, our services cover every facet of data management.
+      </p>
+      <div class="flex flex-col md:flex-row gap-8">
+        <!-- Service: Reports & Dashboards -->
+        <div class="bg-gray-50 rounded-lg shadow-md p-6 md:w-1/2" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-bold mb-2">Reports & Dashboards</h3>
+          <p class="text-gray-700 mb-4">
+            Custom-tailored dashboards and automated reporting to help you make data-driven decisions quickly.
+          </p>
+          <ul class="list-disc ml-6 text-gray-600 mb-4">
+            <li>Real-time KPI monitoring</li>
+            <li>Automated report scheduling</li>
+            <li>Interactive visualizations</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Request a Demo
+          </button>
+        </div>
+        <!-- Service: Data Consultation -->
+        <div class="bg-gray-50 rounded-lg shadow-md p-6 md:w-1/2" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-xl font-bold mb-2">Consultation & Strategy</h3>
+          <p class="text-gray-700 mb-4">
+            Our experts help you develop a robust data strategy, from maturity assessments to technology recommendations.
+          </p>
+          <ul class="list-disc ml-6 text-gray-600 mb-4">
+            <li>Data maturity assessment</li>
+            <li>Technology stack recommendations</li>
+            <li>Roadmap & ROI analysis</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Book a Session
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">About SokoData</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Image -->
+        <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8" data-aos="fade-up">
+          <img src="https://images.unsplash.com/photo-1526378720663-4aa0cafa3891?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+               alt="About SokoData" class="rounded shadow-md w-full" loading="lazy">
+        </div>
+        <!-- Text -->
+        <div class="md:w-1/2" data-aos="fade-up" data-aos-delay="100">
+          <p class="text-gray-700 mb-4">
+            SokoData is your trusted partner in transforming raw data into actionable insights. We specialize in data analytics, machine learning, cybersecurity, and more.
+          </p>
+          <p class="text-gray-700 mb-4">
+            Our mission is to empower businesses with the tools and strategies needed to thrive in a data-driven world.
+          </p>
+          <a href="#solutions" class="inline-block mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">
+            View Our Solutions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Why Choose Us Section -->
+  <section id="why-choose-us" class="py-12 bg-blue-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Why Choose SokoData?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow p-6" data-aos="fade-up">
+          <i class="fas fa-users text-blue-600 text-4xl mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Expert Team</h3>
+          <p class="text-gray-600">Our professionals bring decades of combined experience in data analytics and technology.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-chart-line text-blue-600 text-4xl mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Proven Results</h3>
+          <p class="text-gray-600">We have a track record of delivering measurable improvements and actionable insights.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-lightbulb text-blue-600 text-4xl mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Innovative Solutions</h3>
+          <p class="text-gray-600">Our cutting-edge tools and strategies ensure you stay ahead of the competition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Testimonials</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Testimonial 1 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow" data-aos="fade-up">
+          <p class="text-gray-700 italic mb-4">"SokoData transformed our business with their innovative analytics solutions. Our decision-making is now data-driven and much more effective."</p>
+          <div class="flex items-center">
+            <img src="https://via.placeholder.com/50" alt="Client 1" class="w-12 h-12 rounded-full mr-3">
+            <div>
+              <h4 class="font-bold">John Doe</h4>
+              <span class="text-gray-600 text-sm">CEO, TechCorp</span>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow" data-aos="fade-up" data-aos-delay="100">
+          <p class="text-gray-700 italic mb-4">"The team at SokoData helped us unlock hidden insights from our data. Their consultation services are top-notch!"</p>
+          <div class="flex items-center">
+            <img src="https://via.placeholder.com/50" alt="Client 2" class="w-12 h-12 rounded-full mr-3">
+            <div>
+              <h4 class="font-bold">Jane Smith</h4>
+              <span class="text-gray-600 text-sm">CMO, MarketGuru</span>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="bg-gray-50 rounded-lg p-6 shadow" data-aos="fade-up" data-aos-delay="200">
+          <p class="text-gray-700 italic mb-4">"Their innovative approach to data visualization and machine learning has given us a competitive edge in our industry."</p>
+          <div class="flex items-center">
+            <img src="https://via.placeholder.com/50" alt="Client 3" class="w-12 h-12 rounded-full mr-3">
+            <div>
+              <h4 class="font-bold">Samuel K.</h4>
+              <span class="text-gray-600 text-sm">CTO, Innovatech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <!-- Footer -->
   <footer class="bg-gray-800 text-white pt-8 pb-4">
     <div class="max-w-7xl mx-auto px-4">
@@ -125,7 +269,7 @@
         <div class="mb-6 md:mb-0">
           <h3 class="font-bold text-xl mb-2">SokoData</h3>
           <p class="text-sm text-gray-300">
-            Your trusted partner for innovative Data Analytics Solutions.
+            Your trusted partner for innovative Data Analytics, Cyber Security, and Machine Learning solutions.
           </p>
         </div>
         <!-- Column 2: Quick Links -->
@@ -169,7 +313,7 @@
       </div>
     </div>
   </footer>
-
+  
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
@@ -179,10 +323,9 @@
       offset: 100,
       easing: 'ease-out-cubic'
     });
-
     // Update footer year dynamically
     document.getElementById('year').textContent = new Date().getFullYear();
-
+    
     // Mobile Menu Toggle
     const menuButton = document.getElementById('menuButton');
     const mobileMenu = document.getElementById('mobileMenu');
