@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SokoData - Cheap Data Bundles</title>
+  <title>SokoData - Data Analytics Solutions</title>
   
   <!-- Tailwind CSS (Minified) -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
@@ -15,11 +15,10 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
   <style>
-    /* Custom styles for a starry or subtle hero background */
+    /* Custom hero background: abstract data or starry style */
     .hero-bg {
-      background: url('https://images.unsplash.com/photo-1602203019327-a6c5c939f57b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')
+      background: url('https://images.unsplash.com/photo-1526378720663-4aa0cafa3891?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')
         center center / cover no-repeat;
-      /* or you can use a starry background image if you prefer */
     }
   </style>
 </head>
@@ -34,13 +33,12 @@
         <div><i class="fa fa-map-marker-alt mr-1"></i> Nairobi, Kenya</div>
         <div><i class="fa fa-envelope mr-1"></i> contact@sokodata.com</div>
       </div>
-      <!-- Right Navigation: Data, Airtime, Cart, Blog, Reseller, Login -->
+      <!-- Right Navigation: Solutions, Services, Blog, Consultation, Login -->
       <div class="hidden sm:flex items-center gap-4">
-        <a href="#data" class="hover:underline">Data</a>
-        <a href="#airtime" class="hover:underline">Airtime</a>
-        <a href="#cart" class="hover:underline">Cart</a>
+        <a href="#solutions" class="hover:underline">Solutions</a>
+        <a href="#services" class="hover:underline">Services</a>
         <a href="#blog" class="hover:underline">Blog</a>
-        <a href="#reseller" class="hover:underline">Reseller</a>
+        <a href="#consultation" class="hover:underline">Consultation</a>
         <a href="#login" class="hover:underline">Login</a>
       </div>
     </div>
@@ -55,7 +53,7 @@
       </a>
       <!-- Secondary Nav or CTA (if needed) -->
       <nav class="space-x-4 hidden md:block">
-        <a href="#bundles" class="text-gray-700 hover:text-blue-600 font-medium">Bundles</a>
+        <a href="#solutions" class="text-gray-700 hover:text-blue-600 font-medium">Solutions</a>
         <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
         <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
       </nav>
@@ -66,94 +64,171 @@
   <section class="hero-bg h-[60vh] md:h-[80vh] w-full bg-blue-900 flex items-center justify-center relative">
     <div class="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
     <div class="relative z-10 text-center text-white max-w-2xl px-4">
-      <h1 class="text-3xl md:text-5xl font-bold mb-4">Cheap Data</h1>
-      <p class="text-lg md:text-xl mb-6">
-        You can now do more for less on all networks with SokoData.
+      <h1 class="text-3xl md:text-5xl font-bold mb-4" data-aos="fade-up">
+        Empower Your Data
+      </h1>
+      <p class="text-lg md:text-xl mb-6" data-aos="fade-up" data-aos-delay="100">
+        Comprehensive Data Analytics Solutions to Transform Your Business
       </p>
-      <a href="#bundles" class="inline-block bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-semibold transition">
-        <i class="fa fa-cart-plus mr-2"></i>Get Data
+      <a href="#solutions"
+         class="inline-block bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-semibold transition"
+         data-aos="fade-up"
+         data-aos-delay="200"
+      >
+        <i class="fa fa-database mr-2"></i>Explore Solutions
       </a>
     </div>
   </section>
 
-  <!-- Bundles Section (Similar to “Mighty Data Bundles”) -->
-  <section id="bundles" class="py-12 bg-gray-50">
+  <!-- Solutions Section -->
+  <section id="solutions" class="py-12 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">SokoData Bundles</h2>
-      <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto">
-        Finally, the solution to all your data problems is here. We have the best prices and convenient payment options. Choose your preferred network below to get your cheap data.
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">SokoData Solutions</h2>
+      <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        We offer a wide range of data analytics solutions, from data visualization to cyber security. Whether you’re just starting with analytics or looking to enhance existing systems, we’ve got you covered.
       </p>
-      <!-- Grid of Bundles -->
+      <!-- Grid of Solutions -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Card 1 (Safaricom) -->
-        <div class="bg-white rounded shadow hover:shadow-md transition p-4">
-          <img src="https://via.placeholder.com/600x300/2eaf74/fff?text=Safaricom" alt="Safaricom" class="w-full h-32 object-cover mb-4 rounded">
-          <h3 class="font-bold text-xl mb-2">Safaricom</h3>
-          <p class="text-gray-600 text-sm mb-4">Bundles from 1GB to 50GB at affordable rates.</p>
+        <!-- Card 1: Data Visualization -->
+        <div class="bg-white rounded shadow hover:shadow-md transition p-4" data-aos="fade-up" data-aos-delay="200">
+          <img
+            src="https://images.unsplash.com/photo-1517142089942-ba376ce32a5e?auto=format&fit=crop&w=800&q=80"
+            alt="Data Visualization"
+            class="w-full h-32 object-cover mb-4 rounded"
+            loading="lazy"
+          >
+          <h3 class="font-bold text-xl mb-2">Data Visualization</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Transform raw data into actionable insights with interactive dashboards and real-time reporting.
+          </p>
           <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">
-            Buy Now
+            Learn More
           </button>
         </div>
-        <!-- Card 2 (Airtel) -->
-        <div class="bg-white rounded shadow hover:shadow-md transition p-4">
-          <img src="https://via.placeholder.com/600x300/e91e63/fff?text=Airtel" alt="Airtel" class="w-full h-32 object-cover mb-4 rounded">
-          <h3 class="font-bold text-xl mb-2">Airtel</h3>
-          <p class="text-gray-600 text-sm mb-4">Stay connected with superfast Airtel data deals.</p>
+        <!-- Card 2: Machine Learning -->
+        <div class="bg-white rounded shadow hover:shadow-md transition p-4" data-aos="fade-up" data-aos-delay="300">
+          <img
+            src="https://images.unsplash.com/photo-1581091870623-1f9c0a7f3f44?auto=format&fit=crop&w=800&q=80"
+            alt="Machine Learning"
+            class="w-full h-32 object-cover mb-4 rounded"
+            loading="lazy"
+          >
+          <h3 class="font-bold text-xl mb-2">Machine Learning</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Leverage predictive models and AI-driven insights to stay ahead in a competitive market.
+          </p>
           <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">
-            Buy Now
+            Learn More
           </button>
         </div>
-        <!-- Card 3 (Telkom) -->
-        <div class="bg-white rounded shadow hover:shadow-md transition p-4">
-          <img src="https://via.placeholder.com/600x300/ff9800/fff?text=Telkom" alt="Telkom" class="w-full h-32 object-cover mb-4 rounded">
-          <h3 class="font-bold text-xl mb-2">Telkom</h3>
-          <p class="text-gray-600 text-sm mb-4">Amazing data offers to keep you online all day.</p>
+        <!-- Card 3: Cyber Security -->
+        <div class="bg-white rounded shadow hover:shadow-md transition p-4" data-aos="fade-up" data-aos-delay="400">
+          <img
+            src="https://images.unsplash.com/photo-1605902711622-cfb43c44375e?auto=format&fit=crop&w=800&q=80"
+            alt="Cyber Security"
+            class="w-full h-32 object-cover mb-4 rounded"
+            loading="lazy"
+          >
+          <h3 class="font-bold text-xl mb-2">Cyber Security</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Protect your data with state-of-the-art threat analysis, real-time monitoring, and robust data protection.
+          </p>
           <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">
-            Buy Now
+            Learn More
           </button>
         </div>
-        <!-- Card 4 (Faiba) -->
-        <div class="bg-white rounded shadow hover:shadow-md transition p-4">
-          <img src="https://via.placeholder.com/600x300/607d8b/fff?text=Faiba" alt="Faiba" class="w-full h-32 object-cover mb-4 rounded">
-          <h3 class="font-bold text-xl mb-2">Faiba</h3>
-          <p class="text-gray-600 text-sm mb-4">Enjoy high-speed data packages for all your needs.</p>
+        <!-- Card 4: Data Protection -->
+        <div class="bg-white rounded shadow hover:shadow-md transition p-4" data-aos="fade-up" data-aos-delay="500">
+          <img
+            src="https://images.unsplash.com/photo-1591696331111-bb2c65f382a3?auto=format&fit=crop&w=800&q=80"
+            alt="Data Protection"
+            class="w-full h-32 object-cover mb-4 rounded"
+            loading="lazy"
+          >
+          <h3 class="font-bold text-xl mb-2">Data Protection</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Ensure compliance and secure your business with end-to-end data governance and privacy frameworks.
+          </p>
           <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">
-            Buy Now
+            Learn More
           </button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section (Similar to “About MightyData”) -->
-  <section id="about" class="py-12 bg-white">
+  <!-- Services Section -->
+  <section id="services" class="py-12 bg-white">
     <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">About SokoData</h2>
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Our Services</h2>
+      <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+        From data audits and strategy formulation to implementation and support, SokoData offers full-stack data services to help you harness the true power of analytics.
+      </p>
+      <div class="flex flex-col md:flex-row gap-8">
+        <!-- Service 1: Reports Formulation -->
+        <div class="bg-gray-50 rounded-lg shadow-md p-6 md:w-1/2" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-bold mb-2">Reports & Dashboards</h3>
+          <p class="text-gray-700 mb-4">
+            Get comprehensive reports tailored to your key metrics. We design interactive dashboards that simplify complex data and help you make data-driven decisions faster.
+          </p>
+          <ul class="list-disc ml-6 text-gray-600 mb-4">
+            <li>Real-time KPI monitoring</li>
+            <li>Automated report scheduling</li>
+            <li>Custom visualization design</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Request a Demo
+          </button>
+        </div>
+        <!-- Service 2: Data Consultation -->
+        <div class="bg-gray-50 rounded-lg shadow-md p-6 md:w-1/2" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-xl font-bold mb-2">Consultation & Strategy</h3>
+          <p class="text-gray-700 mb-4">
+            Our experts work with you to develop a solid data strategy. We help identify gaps, define roadmaps, and implement best practices tailored to your business needs.
+          </p>
+          <ul class="list-disc ml-6 text-gray-600 mb-4">
+            <li>Data maturity assessment</li>
+            <li>Technology stack recommendations</li>
+            <li>Roadmap & ROI analysis</li>
+          </ul>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            Book a Session
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">About SokoData</h2>
       <div class="flex flex-col md:flex-row items-center">
         <!-- Image -->
-        <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+        <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8" data-aos="fade-up">
           <img 
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" 
+            src="https://images.unsplash.com/photo-1526378720663-4aa0cafa3891?auto=format&fit=crop&w=800&q=80" 
             alt="About SokoData" 
             class="rounded shadow-md w-full"
+            loading="lazy"
           />
         </div>
         <!-- Text -->
-        <div class="md:w-1/2">
+        <div class="md:w-1/2" data-aos="fade-up" data-aos-delay="100">
           <p class="text-gray-700 mb-4">
-            SokoData is the reliable and affordable way to get your data bundles on any Kenyan network. We offer the best price rates for Safaricom, Airtel, Telkom, and Faiba.
+            SokoData is your trusted partner for data analytics solutions. We empower organizations to turn raw data into valuable insights through cutting-edge technology, innovation, and expertise.
           </p>
           <p class="text-gray-700 mb-4">
-            Whether you are a casual surfer using just 500MB a month or a heavy data addict consuming 20GB+ monthly, we have an affordable data plan for you!
+            Whether you're looking for end-to-end analytics implementation or specialized support in machine learning, visualization, or data protection, our team of experts is here to help you thrive in a data-driven world.
           </p>
           <p class="text-gray-700 mb-4">
-            With multiple payment options and 24/7 availability, take advantage of our cheap data offering for all networks and do more in every area of your life.
+            Partner with us to unleash the full potential of your data and gain a competitive edge in your industry.
           </p>
           <a 
-            href="#bundles" 
+            href="#solutions" 
             class="inline-block mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
           >
-            View Data Bundles
+            View Our Solutions
           </a>
         </div>
       </div>
@@ -163,43 +238,44 @@
   <!-- Footer -->
   <footer class="bg-gray-800 text-white pt-8 pb-4">
     <div class="max-w-7xl mx-auto px-4">
-      <!-- Upper Footer: Quick links, Payment icons, etc. -->
+      <!-- Upper Footer: Quick links, Payment/Tech icons, etc. -->
       <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-8">
         <!-- Column 1: Company Info -->
         <div class="mb-6 md:mb-0">
           <h3 class="font-bold text-xl mb-2">SokoData</h3>
           <p class="text-sm text-gray-200">
-            SokoData is your go-to platform for affordable data bundles on all Kenyan networks.
+            Your go-to platform for all Data Analytics, Cyber Security, and Machine Learning needs.
           </p>
         </div>
         <!-- Column 2: Quick Nav -->
         <div class="mb-6 md:mb-0">
-          <h4 class="font-semibold mb-2">Come Say Hi</h4>
+          <h4 class="font-semibold mb-2">Quick Links</h4>
           <ul class="space-y-1 text-sm">
-            <li><a href="#" class="hover:underline">Facebook</a></li>
-            <li><a href="#" class="hover:underline">Twitter</a></li>
-            <li><a href="#" class="hover:underline">Instagram</a></li>
+            <li><a href="#solutions" class="hover:underline">Solutions</a></li>
+            <li><a href="#services" class="hover:underline">Services</a></li>
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
           </ul>
         </div>
-        <!-- Column 3: Data Bundles -->
+        <!-- Column 3: Services -->
         <div class="mb-6 md:mb-0">
-          <h4 class="font-semibold mb-2">Data Bundles</h4>
+          <h4 class="font-semibold mb-2">Our Services</h4>
           <ul class="space-y-1 text-sm">
-            <li><a href="#" class="hover:underline">Safaricom</a></li>
-            <li><a href="#" class="hover:underline">Airtel</a></li>
-            <li><a href="#" class="hover:underline">Telkom</a></li>
-            <li><a href="#" class="hover:underline">Faiba</a></li>
+            <li>Data Visualization</li>
+            <li>Machine Learning</li>
+            <li>Cyber Security</li>
+            <li>Data Protection</li>
+            <li>Consultation</li>
           </ul>
         </div>
-        <!-- Column 4: How to Pay / Payment Icons -->
+        <!-- Column 4: Social Icons -->
         <div>
-          <h4 class="font-semibold mb-2">How to Pay</h4>
+          <h4 class="font-semibold mb-2">Stay Connected</h4>
           <div class="flex items-center space-x-3 text-xl text-gray-300">
-            <!-- Example payment icons -->
-            <i class="fab fa-cc-visa"></i>
-            <i class="fab fa-cc-mastercard"></i>
-            <i class="fab fa-paypal"></i>
-            <i class="fab fa-bitcoin"></i>
+            <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
