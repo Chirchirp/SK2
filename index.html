@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SokoData - Cheap Data Bundles</title>
+  
+  <!-- Tailwind CSS (Minified) -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Optional: Animate on Scroll (AOS) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+  <style>
+    /* Custom styles for a starry or subtle hero background */
+    .hero-bg {
+      background: url('https://images.unsplash.com/photo-1602203019327-a6c5c939f57b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')
+        center center / cover no-repeat;
+      /* or you can use a starry background image if you prefer */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Top Bar -->
+  <div class="w-full bg-gray-800 text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+      <!-- Left Contact Info -->
+      <div class="flex items-center gap-4">
+        <div><i class="fa fa-phone mr-1"></i> +254 700 000 000</div>
+        <div><i class="fa fa-map-marker-alt mr-1"></i> Nairobi, Kenya</div>
+        <div><i class="fa fa-envelope mr-1"></i> contact@sokodata.com</div>
+      </div>
+      <!-- Right Navigation: Data, Airtime, Cart, Blog, Reseller, Login -->
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="#data" class="hover:underline">Data</a>
+        <a href="#airtime" class="hover:underline">Airtime</a>
+        <a href="#cart" class="hover:underline">Cart</a>
+        <a href="#blog" class="hover:underline">Blog</a>
+        <a href="#reseller" class="hover:underline">Reseller</a>
+        <a href="#login" class="hover:underline">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Main Navigation (Logo & Possibly Another Nav) -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="text-2xl font-bold text-blue-600">
+        SokoData
+      </a>
+      <!-- Secondary Nav or CTA (if needed) -->
+      <nav class="space-x-4 hidden md:block">
+        <a href="#bundles" class="text-gray-700 hover:text-blue-600 font-medium">Bundles</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg h-[60vh] md:h-[80vh] w-full bg-blue-900 flex items-center justify-center relative">
+    <div class="absolute inset-0 bg-blue-900 bg-opacity-50"></div>
+    <div class="relative z-10 text-center text-white max-w-2xl px-4">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">Cheap Data</h1>
+      <p class="text-lg md:text-xl mb-6">
+        You can now do more for less on all networks with SokoData.
+      </p>
+      <a href="#bundles" class="inline-block bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-semibold transition">
+        <i class="fa fa-cart-plus mr-2"></i>Get Data
+      </a>
+    </div>
+  </section>
+
+  <!-- Bundles Section (Similar to “Mighty Data Bundles”) -->
+  <section id="bundles" class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">SokoData Bundles</h2>
+      <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto">
+        Finally, the solution to all your data problems is here. We have the best prices and convenient payment options. Choose your preferred network below to get your cheap data.
+      </p>
+      <!-- Grid of Bundles -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 (Safaricom) -->
+        <div class="bg-white rounded shadow hover:shadow-md transition p-4">
+          <img src="https://via.placeholder.com/600x300/2eaf74/fff?text=Safaricom" alt="Safaricom" class="w-full h-32 object-cover mb-4 rounded">
+          <h3 class="font-bold text-xl mb-2">Safaricom</h3>
+          <p class="text-gray-600 text-sm mb-4">Bundles from 1GB to 50GB at affordable rates.</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">
+            Buy Now
+          </button>
+        </div>
+        <!-- Card 2 (Airtel) -->
+        <div class="bg-white rounded shadow hover:shadow-md transition p-4">
+          <img src="https://via.placeholder.com/600x300/e91e63/fff?text=Airtel" alt="Airtel" class="w-full h-32 object-cover mb-4 rounded">
+          <h3 class="font-bold text-xl mb-2">Airtel</h3>
+          <p class="text-gray-600 text-sm mb-4">Stay connected with superfast Airtel data deals.</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">
+            Buy Now
+          </button>
+        </div>
+        <!-- Card 3 (Telkom) -->
+        <div class="bg-white rounded shadow hover:shadow-md transition p-4">
+          <img src="https://via.placeholder.com/600x300/ff9800/fff?text=Telkom" alt="Telkom" class="w-full h-32 object-cover mb-4 rounded">
+          <h3 class="font-bold text-xl mb-2">Telkom</h3>
+          <p class="text-gray-600 text-sm mb-4">Amazing data offers to keep you online all day.</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">
+            Buy Now
+          </button>
+        </div>
+        <!-- Card 4 (Faiba) -->
+        <div class="bg-white rounded shadow hover:shadow-md transition p-4">
+          <img src="https://via.placeholder.com/600x300/607d8b/fff?text=Faiba" alt="Faiba" class="w-full h-32 object-cover mb-4 rounded">
+          <h3 class="font-bold text-xl mb-2">Faiba</h3>
+          <p class="text-gray-600 text-sm mb-4">Enjoy high-speed data packages for all your needs.</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section (Similar to “About MightyData”) -->
+  <section id="about" class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">About SokoData</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- Image -->
+        <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+          <img 
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" 
+            alt="About SokoData" 
+            class="rounded shadow-md w-full"
+          />
+        </div>
+        <!-- Text -->
+        <div class="md:w-1/2">
+          <p class="text-gray-700 mb-4">
+            SokoData is the reliable and affordable way to get your data bundles on any Kenyan network. We offer the best price rates for Safaricom, Airtel, Telkom, and Faiba.
+          </p>
+          <p class="text-gray-700 mb-4">
+            Whether you are a casual surfer using just 500MB a month or a heavy data addict consuming 20GB+ monthly, we have an affordable data plan for you!
+          </p>
+          <p class="text-gray-700 mb-4">
+            With multiple payment options and 24/7 availability, take advantage of our cheap data offering for all networks and do more in every area of your life.
+          </p>
+          <a 
+            href="#bundles" 
+            class="inline-block mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
+          >
+            View Data Bundles
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white pt-8 pb-4">
+    <div class="max-w-7xl mx-auto px-4">
+      <!-- Upper Footer: Quick links, Payment icons, etc. -->
+      <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-8">
+        <!-- Column 1: Company Info -->
+        <div class="mb-6 md:mb-0">
+          <h3 class="font-bold text-xl mb-2">SokoData</h3>
+          <p class="text-sm text-gray-200">
+            SokoData is your go-to platform for affordable data bundles on all Kenyan networks.
+          </p>
+        </div>
+        <!-- Column 2: Quick Nav -->
+        <div class="mb-6 md:mb-0">
+          <h4 class="font-semibold mb-2">Come Say Hi</h4>
+          <ul class="space-y-1 text-sm">
+            <li><a href="#" class="hover:underline">Facebook</a></li>
+            <li><a href="#" class="hover:underline">Twitter</a></li>
+            <li><a href="#" class="hover:underline">Instagram</a></li>
+          </ul>
+        </div>
+        <!-- Column 3: Data Bundles -->
+        <div class="mb-6 md:mb-0">
+          <h4 class="font-semibold mb-2">Data Bundles</h4>
+          <ul class="space-y-1 text-sm">
+            <li><a href="#" class="hover:underline">Safaricom</a></li>
+            <li><a href="#" class="hover:underline">Airtel</a></li>
+            <li><a href="#" class="hover:underline">Telkom</a></li>
+            <li><a href="#" class="hover:underline">Faiba</a></li>
+          </ul>
+        </div>
+        <!-- Column 4: How to Pay / Payment Icons -->
+        <div>
+          <h4 class="font-semibold mb-2">How to Pay</h4>
+          <div class="flex items-center space-x-3 text-xl text-gray-300">
+            <!-- Example payment icons -->
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-paypal"></i>
+            <i class="fab fa-bitcoin"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lower Footer: Copyright -->
+      <div class="border-t border-gray-700 pt-4 text-center text-sm text-gray-300">
+        <p class="mb-2">
+          &copy; <span id="year"></span> SokoData. All rights reserved.
+        </p>
+        <div class="space-x-4">
+          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+          <a href="#" class="hover:underline">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS JS (Optional) -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      offset: 100,
+      easing: 'ease-out-cubic'
+    });
+
+    // Update Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
